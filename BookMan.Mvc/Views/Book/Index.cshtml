@@ -1,0 +1,60 @@
+﻿@model IEnumerable<BookMan.Mvc.Models.Book>
+
+@{
+    ViewData["Title"] = "List Book";
+}
+
+<h1>Danh sách tác phẩm</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-sm btn-outline-primary">Thêm sách mới</a>
+</p>
+<form class="input-group w-50 float-right" asp-action="Search" method="get">
+    <input type="text" class="form-control" placeholder="Nhập từ khoá..." name="term" />
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Tìm kiếm</button>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Authors)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Publisher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-route-id="@item.Id" asp-action="Details">@item.Name</a>
+            </td>
+            <td>
+                @item.Authors
+            </td>
+            <td>
+                @item.Publisher
+            </td>
+            <td>
+                @item.Year
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Thông tin</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Chỉnh sửa</a>
+                <a asp-action="Read" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">Tải sách</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Xoá</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
