@@ -18,11 +18,11 @@ namespace BookMan.Mvc.Controllers
             var model = _service.Paging(page);
             ViewData["Pages"] = model.pages;
             ViewData["Page"] = model.page;
-            return View(model.books);
+            return View(model.books); //Trả về danh sách của Books
         }
         public IActionResult Details(int id)
         {
-            var b = _service.Get(id);
+            var b = _service.Get(id);//Lấy đối tượng Book theo Id
             if (b == null)
             {
                 return NotFound();

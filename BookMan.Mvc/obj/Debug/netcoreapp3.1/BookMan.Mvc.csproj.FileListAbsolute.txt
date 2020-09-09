@@ -804,3 +804,4 @@ C:\Users\lqman\Desktop\BookMan.Mvc\BookMan.Mvc\obj\Debug\netcoreapp3.1\staticweb
 C:\Users\lqman\Desktop\BookMan.Mvc\BookMan.Mvc\obj\Debug\netcoreapp3.1\BookMan.Mvc.dll
 C:\Users\lqman\Desktop\BookMan.Mvc\BookMan.Mvc\obj\Debug\netcoreapp3.1\BookMan.Mvc.pdb
 C:\Users\lqman\Desktop\BookMan.Mvc\BookMan.Mvc\obj\Debug\netcoreapp3.1\BookMan.Mvc.genruntimeconfig.cache
+C:\Users\lqman\Desktop\BookMan.Mvc\BookMan.Mvc\obj\Debug\netcoreapp3.1\Razor\Views\Book\NotFound.cshtml.g.cs

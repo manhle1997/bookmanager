@@ -50,23 +50,23 @@ namespace BookMan.Mvc.Models
 
         public Book Get(int id)
         {
-            return Books.FirstOrDefault(b => b.Id == id);
+            return Books.FirstOrDefault(b => b.Id == id);//Trả về phần tử đầu tiên theo của HashSet Books theo điều kiện Id = id được truyền vào
         }
 
         public bool Add(Book book)
         {
-            return Books.Add(book);
+            return Books.Add(book);//Gọi phương thức Add của HashSet để thêm book mới
         }
 
         public Book Create()
         {
-            var max = Books.Max(b => b.Id);
-            var b = new Book()
+            var max = Books.Max(b => b.Id);//gán max bằng Id lớn nhất
+            var b = new Book() //Khởi tạo đối tượng mới với Id = max +1 và năm = năm hiện tại
             {
                 Id = max + 1,
                 Year = DateTime.Now.Year
             };
-            return b;
+            return b; // Trả về đối tượng b;
         }
 
         public bool Update(Book book)
@@ -92,7 +92,7 @@ namespace BookMan.Mvc.Models
         }
         public void Upload(Book book, IFormFile file)
         {
-            if(file != null)
+            if(file != null) //Nếu file dc tạo rồi
             {
                 var path = GetDataPath(file.FileName);
                 using var stream = new FileStream(path, FileMode.Create);
