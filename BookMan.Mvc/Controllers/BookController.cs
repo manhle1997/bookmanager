@@ -12,6 +12,11 @@ namespace BookMan.Mvc.Controllers
         {
             _service = service;
         }
+
+        public IActionResult NotFoundPages()
+        {
+            return View();
+        }
         // GET
         public IActionResult Index(int page = 1)
         {
@@ -56,7 +61,7 @@ namespace BookMan.Mvc.Controllers
             var b = _service.Get(id);
             if (b == null)
             {
-                return NotFound();
+                return RedirectToAction("NotFoundPages");
             }
             else
             {

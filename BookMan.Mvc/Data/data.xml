@@ -69,11 +69,4 @@
     <Publisher>3</Publisher>
     <Year>2020</Year>
   </Book>
-  <Book>
-    <Id>9</Id>
-    <Name>4</Name>
-    <Authors>4</Authors>
-    <Publisher>4</Publisher>
-    <Year>2020</Year>
-  </Book>
 </ArrayOfBook>

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lqman\\Desktop\\BookMan.Mvc\\BookMan.Mvc\\BookMan.Mvc.csproj": {}
+    "C:\\Users\\lqmanh\\Desktop\\bookmanager\\BookMan.Mvc\\BookMan.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lqman\\Desktop\\BookMan.Mvc\\BookMan.Mvc\\BookMan.Mvc.csproj": {
+    "C:\\Users\\lqmanh\\Desktop\\bookmanager\\BookMan.Mvc\\BookMan.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lqman\\Desktop\\BookMan.Mvc\\BookMan.Mvc\\BookMan.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\lqmanh\\Desktop\\bookmanager\\BookMan.Mvc\\BookMan.Mvc.csproj",
         "projectName": "BookMan.Mvc",
-        "projectPath": "C:\\Users\\lqman\\Desktop\\BookMan.Mvc\\BookMan.Mvc\\BookMan.Mvc.csproj",
-        "packagesPath": "C:\\Users\\lqman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lqman\\Desktop\\BookMan.Mvc\\BookMan.Mvc\\obj\\",
+        "projectPath": "C:\\Users\\lqmanh\\Desktop\\bookmanager\\BookMan.Mvc\\BookMan.Mvc.csproj",
+        "packagesPath": "C:\\Users\\lqmanh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lqmanh\\Desktop\\bookmanager\\BookMan.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lqman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lqmanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
